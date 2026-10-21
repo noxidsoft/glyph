@@ -49,19 +49,22 @@ for line in open(sys.argv[1]):
 print(" ".join(txt))
 PY
 )
-CALLED=$(python3 - "$OUT" <<'PY'
-import json,sys
-n=0
+CALLED=$(python3 - "$OUT" <<'PYEOF'
+import json,re,sys
+# A real glyph invocation -- not merely the word "glyph" inside a path, which
+# made `ls ~/.claude/skills/glyph` count as memory usage and inflated results.
+SUB = r"(init|etch|amend|ask|show|list|link|related|forget|context|skill|model)"
+RX  = re.compile(r"(?:^|[;&|]\s*|\s)(?:[\w./$~{}-]*/)?glyph\s+" + SUB + r"\b")
+n = 0
 for line in open(sys.argv[1]):
-    try: ev=json.loads(line)
+    try: ev = json.loads(line)
     except ValueError: continue
-    if ev.get("type")=="assistant":
-        for b in ev.get("message",{}).get("content",[]):
-            if b.get("type")=="tool_use":
-                blob=json.dumps(b.get("input",{}))
-                if "glyph" in blob or "glyph" in str(b.get("name","")): n+=1
+    if ev.get("type") == "assistant":
+        for b in ev.get("message", {}).get("content", []):
+            if b.get("type") == "tool_use" and RX.search(str(b.get("input", {}).get("command", ""))):
+                n += 1
 print(n)
-PY
+PYEOF
 )
 
 echo "--- answer ---"; echo "$ANSWER" | head -5; echo
