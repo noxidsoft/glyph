@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/54rt1n/glyph/internal/facet"
-	"github.com/54rt1n/glyph/internal/id"
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/facet"
+	"github.com/noxidsoft/glyph/internal/id"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 // graphFile is the --graph payload: etch nodes, then link edges.

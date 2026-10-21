@@ -1,8 +1,8 @@
 package cli
 
 import (
-	"github.com/54rt1n/glyph/internal/facet"
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/facet"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 // jsonGlyphs shapes glyphs for JSON output at the given facet — the same

@@ -16,13 +16,13 @@ See [OVERVIEW.md](OVERVIEW.md) for the full design.
 ## Install
 
 ```bash
-go install github.com/54rt1n/glyph/cmd/glyph@latest
+go install github.com/noxidsoft/glyph/cmd/glyph@latest
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/54rt1n/glyph
+git clone https://github.com/noxidsoft/glyph
 cd glyph
 make build          # → bin/glyph
 ```

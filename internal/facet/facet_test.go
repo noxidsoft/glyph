@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 func sample() *types.Glyph {

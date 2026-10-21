@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/54rt1n/glyph/internal/config"
-	"github.com/54rt1n/glyph/internal/store"
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/config"
+	"github.com/noxidsoft/glyph/internal/store"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 func sampleGlyph() *types.Glyph {
