@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/54rt1n/glyph/internal/config"
+	"github.com/noxidsoft/glyph/internal/config"
 )
 
 // hfCandidates lists, per required file, the repo-relative paths to try in

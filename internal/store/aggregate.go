@@ -3,7 +3,7 @@ package store
 import (
 	"time"
 
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 // TagCount pairs a tag with its usage count.

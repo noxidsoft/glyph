@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/54rt1n/glyph/internal/config"
+	"github.com/noxidsoft/glyph/internal/config"
 )
 
 // DefaultModel is the curated default (what gobed was built around).

@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/54rt1n/glyph/internal/facet"
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/facet"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 var (

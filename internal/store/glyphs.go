@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/54rt1n/glyph/internal/id"
-	"github.com/54rt1n/glyph/internal/types"
+	"github.com/noxidsoft/glyph/internal/id"
+	"github.com/noxidsoft/glyph/internal/types"
 )
 
 // ErrNotFound is returned when a glyph id does not exist.

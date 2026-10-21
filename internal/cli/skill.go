@@ -82,7 +82,9 @@ Never put a URL in a tag. Never ref another glyph — link it.
 
 Defaults: list/ask/related return **pin**; show returns **body**. Use --facet to override.
 Pins use an explicit one-line summary when present and otherwise fall back to the first body line.
-When output says "showing N of M", the window is full — memory is not empty.
+When stderr says "showing N of M", the window is full — memory is not empty.
+Stdout carries only glyph data at every facet, so --facet id pipes cleanly; notes and
+hints go to stderr. Read both.
 Budgets are counted in **words** (not tokens; ~4 words ≈ 3 tokens). Context is unlimited by default so every starred glyph remains visible; set --budget explicitly to cap it.
 
 ## Retrieval quality

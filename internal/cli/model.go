@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/54rt1n/glyph/internal/config"
-	"github.com/54rt1n/glyph/internal/embed"
+	"github.com/noxidsoft/glyph/internal/config"
+	"github.com/noxidsoft/glyph/internal/embed"
 )
 
 var modelCmd = &cobra.Command{

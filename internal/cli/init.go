@@ -8,8 +8,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/54rt1n/glyph/internal/config"
-	"github.com/54rt1n/glyph/internal/store"
+	"github.com/noxidsoft/glyph/internal/config"
+	"github.com/noxidsoft/glyph/internal/store"
 )
 
 var initCmd = &cobra.Command{

@@ -1,4 +1,4 @@
-module github.com/54rt1n/glyph
+module github.com/noxidsoft/glyph
 
 go 1.26.5
 

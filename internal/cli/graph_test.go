@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/54rt1n/glyph/internal/id"
+	"github.com/noxidsoft/glyph/internal/id"
 )
 
 func TestParseGraph(t *testing.T) {

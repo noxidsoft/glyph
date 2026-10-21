@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/54rt1n/glyph/internal/cli"
+	"github.com/noxidsoft/glyph/internal/cli"
 )
 
 func main() {
